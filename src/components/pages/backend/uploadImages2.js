@@ -45,7 +45,7 @@ class uploadImages2 extends React.Component {
                 "Authorization":result
             }
         };
-        axios.post("http://localhost:9000/mycontent",formData,config)
+        axios.post("https://bbcs-backend.herokuapp.com/mycontent",formData,config)
             .then((res) => {
                  console.log(res.data);
                 myFunction(res.data);
