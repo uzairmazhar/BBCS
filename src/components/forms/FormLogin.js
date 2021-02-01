@@ -22,11 +22,12 @@ function store(data){
 async function loginUser(credentials) {
   console.log(credentials)
   
-   fetch("https://cors-anywhere.herokuapp.com/" + "https://bbcs-backend.herokuapp.com/users/login", {
+   fetch("https://bbcs-backend.herokuapp.com/users/login", {
       method: "POST",   
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(credentials)
     }).then(res=>{
