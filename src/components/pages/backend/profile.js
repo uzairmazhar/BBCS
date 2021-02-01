@@ -21,7 +21,7 @@ function Profile() {
   };
 
     const response = await axios.get(
-      "http://localhost:9000/mycontent",config);
+      "https://bbcs-backend.herokuapp.com/mycontent",config);
       console.log(response.data);
     setBooks(response.data);
     if(response.data.length===0)    
