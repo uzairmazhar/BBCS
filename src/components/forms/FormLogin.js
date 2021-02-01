@@ -22,7 +22,7 @@ function store(data){
 async function loginUser(credentials) {
   console.log(credentials)
   
-   fetch("http://localhost:9000/users/login", {
+   fetch("https://bbcs-backend.herokuapp.com/users/login", {
       method: "POST",   
       headers: {
         "Content-Type": "application/json",
