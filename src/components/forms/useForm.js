@@ -20,7 +20,7 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch("https://bbcs-backend.herokuapp.com/users/signup", {
+    fetch("https://bbcs-backend.herokuapp.com/users/signup" + "https://cors-anywhere.herokuapp.com/", {
             method: "POST",
            
             headers: {
