@@ -20,12 +20,13 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch("https://cors-anywhere.herokuapp.com/" + "https://bbcs-backend.herokuapp.com/users/signup", {
+    fetch("https://bbcs-backend.herokuapp.com/users/signup", {
             method: "POST",
            
             headers: {
               "Content-Type": "application/json",
-              "Accept": "application/json"
+              "Accept": "application/json",
+              "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(values)
           }).then(res=>{
