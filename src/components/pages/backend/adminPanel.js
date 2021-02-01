@@ -20,7 +20,7 @@ function AdminPanel() {
   };
 
     const response = await axios.get(
-      "http://localhost:9000/admin/content",config);
+      "https://bbcs-backend.herokuapp.com/admin/content",config);
       console.log(response.data);
     setBooks(response.data);
     if(response.data.length===0)    
