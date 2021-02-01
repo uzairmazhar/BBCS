@@ -27,7 +27,7 @@ async function loginUser(credentials) {
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "no-cors"
       },
       body: JSON.stringify(credentials)
     }).then(res=>{
