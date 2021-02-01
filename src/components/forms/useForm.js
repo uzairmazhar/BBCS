@@ -20,7 +20,7 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch("http://localhost:9000/users/signup", {
+    fetch("https://bbcs-backend.herokuapp.com/users/signup", {
             method: "POST",
            
             headers: {
