@@ -26,7 +26,8 @@ const useForm = (callback, validate) => {
             headers: {
               "Content-Type": "application/json",
               "Accept": "application/json",
-              "Access-Control-Allow-Origin": "no-cors"
+              "Access-Control-Allow-Origin": "no-cors",
+              "mode": "no-cors"
             },
             body: JSON.stringify(values)
           }).then(res=>{
